@@ -1,8 +1,13 @@
-.text {
-    font-size: 48pt;
-    color: 454545;
+body{
+    background: #80cbc4;
 }
-
+.text {
+    font-size: 72pt;
+    color: #fff;
+}
+.relative{
+    position: relative;
+}
 .input {
     width: 100%;
     height: 70vh;
@@ -14,12 +19,34 @@
 }
 
 #encrypt {
-    border: 1.5px solid #7A5CE0;
+    border: none;
 
 }
 
 #desencrypt {
-    border: 1.5px solid #FF9C3F;
+    border: none;
+    
+}
+.imagen{
+    background-image: url('../images/ssl.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.blanco{
+    background: #FFF;
+}
+
+#encrypt:focus {
+    outline: none !important;
+    border: 3.5px solid #7A5CE0;
+
+}
+
+#desencrypt:focus {
+    
+    outline: none !important;
+    border: 3.5px solid #FF9C3F;
 }
 
 .btn-e {
@@ -29,12 +56,35 @@
     font-size: 20pt;
     font-weight: bold;
 }
-
+#copy{
+    position: absolute;
+    
+    top: 92%;
+    right: 25px;
+    padding: 4px 6px;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+.info{
+    border: 1px solid #13ae5c;
+    color: #13ae5c;
+}
+.danger{
+    border: 1px solid #ae2813;
+    color: #ae2813;
+}
+.f14{
+    font-size: 14pt;
+}
+.f12 {
+    font-size: 14pt;
+}
 #btn-encrypt {
     border-top: 2.5px solid #13ae5c;
     border-left: 2.5px solid #13ae5c;
     border-right: 2.5px solid #13ae5c;
     border-bottom: 6px solid #13ae5c;
+    transition: all 0.5s ease-in-out;
 }
 
 #btn-desencrypt {
@@ -42,11 +92,41 @@
     border-left: 2.5px solid #f14722;
     border-right: 2.5px solid #f14722;
     border-bottom: 6px solid #f14722;
+    transition: all 0.5s ease-in-out;
 }
-#btn-copy{
+
+#btn-copy {
     background-color: #fff;
     border-top: 2.5px solid #757575;
     border-left: 2.5px solid #757575;
     border-right: 2.5px solid #757575;
     border-bottom: 6px solid #757575;
+    transition: all 0.5s ease-in-out;
+}
+
+#btn-encrypt:hover {
+    color: #fff;
+    background-color: #13ae5c;
+    border-top: 2.5px solid #111;
+    border-left: 2.5px solid #111;
+    border-right: 2.5px solid #111;
+    border-bottom: 6px solid #111;
+}
+
+#btn-desencrypt:hover {
+    color: #fff;
+    background-color: #f14722;
+    border-top: 2.5px solid #111;
+    border-left: 2.5px solid #111;
+    border-right: 2.5px solid #111;
+    border-bottom: 6px solid #111;
+}
+
+#btn-copy:hover {
+    color: #fff;
+    background-color: #757575;
+    border-top: 2.5px solid #fff;
+    border-left: 2.5px solid #fff;
+    border-right: 2.5px solid #fff;
+    border-bottom: 6px solid #fff;
 }
